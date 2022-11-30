@@ -10,6 +10,10 @@ STILI GENERICI */
     --primary-color: black;
     --square-hover-color : #6cdbb6;
     --square-active-color: #b2ffff;
+    --link-color:blue;
+    --link-hover-color:darkblue;
+    --link-active-color:red;
+    --link-visited-color:purple;
 
 
     /* ? MISURE */
@@ -25,6 +29,22 @@ body{
     font-size: var(--general-font-size);
     color: var(--primary-color);
     min-width: 900px;
+}
+
+a{
+    color: var(--link-color);
+}
+
+a:visited{
+    color: var(--link-visited-color);
+}
+
+a:hover{
+    color: var(--link-hover-color);
+}
+
+a:active{
+    color: var(--link-active-color);
 }
 
 
