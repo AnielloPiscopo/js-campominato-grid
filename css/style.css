@@ -1,8 +1,5 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL CHANGES */
-.my-grid{
-    background-color: red;
-}
 /* *-------------------------------------------------------------------
 STILI GENERICI */
 
@@ -13,8 +10,9 @@ STILI GENERICI */
     --primary-color: black;
 
 
-    /* ? ALTRO */
+    /* ? MISURE */
     --general-font-size: 20px;
+    --number-of-squares:10;
 }
 
 
@@ -24,6 +22,7 @@ body{
     font-family: sans-serif;
     font-size: var(--general-font-size);
     color: var(--primary-color);
+    min-width: 900px;
 }
 
 
@@ -61,4 +60,8 @@ main .my-grid{
 
 main .my-grid .my-square{
     border: 1px solid var(--primary-color);
+    width: calc(100% / var(--number-of-squares));
+    height: calc(100% / var(--number-of-squares));
+    border: 2px solid var(--primary-color);
+    font-size: 1.3em;
 }

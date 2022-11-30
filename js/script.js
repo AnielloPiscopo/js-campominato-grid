@@ -17,7 +17,7 @@ CODICE PRINCIPALE */
 // * EVENTI
 playBtn.addEventListener('click' , function(){
     // ? CREAZIONE E INSERIMENTO NEL DOM DEL CONTENITORE GRIGLIA
-    const gridContainer = getAnElement('div','my-grid d-flex');
+    const gridContainer = getAnElement('div','my-grid d-flex flex-wrap');
     
     mainElement.append(gridContainer);
 
@@ -25,7 +25,7 @@ playBtn.addEventListener('click' , function(){
     // ? CREAZIONE DI UN SINGOLO ELEMENTO DELLA GRIGLIA
     for(let i=1 ; i<=100 ; i++){
         // * Creazione e inserimento del singolo elemento della griglia
-        let gridSingleElement = getAnElement('div' , 'nulla');
+        let gridSingleElement = getAnElement('div' , 'my-square align-items-center justify-content-center d-flex');
 
         gridSingleElement.innerHTML = i;
 
