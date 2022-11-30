@@ -40,6 +40,10 @@ playBtn.addEventListener('click' , function(){
             })
         }
     }
+    
+    else{
+        mainElement.firstElementChild.remove();
+    }
 })
 
 
@@ -54,6 +58,6 @@ function getAnElement(element , elementClasses){
     let htmlElement = document.createElement(element);
 
     htmlElement.className = elementClasses;
-    
+
     return htmlElement;
 } 
