@@ -24,10 +24,17 @@ playBtn.addEventListener('click' , function(){
     
     // ? CREAZIONE DI UN SINGOLO ELEMENTO DELLA GRIGLIA
     for(let i=1 ; i<=100 ; i++){
+        // * Creazione e inserimento del singolo elemento della griglia
         let gridSingleElement = getAnElement('div' , 'nulla');
+
         gridSingleElement.innerHTML = i;
 
         gridContainer.append(gridSingleElement);
+
+        // * Aggiunta del evento per ogni singolo elemento della griglia
+        gridSingleElement.addEventListener('click' , function(){
+            console.log(i);
+        })
     }
     
 })
