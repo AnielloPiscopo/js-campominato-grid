@@ -52,6 +52,8 @@ FUNZIONI */
 // * FUNZIONE PER CREARE UN ELEMENTO CON UNA O PIU' CLASSI
 function getAnElement(element , elementClasses){
     let htmlElement = document.createElement(element);
+
     htmlElement.className = elementClasses;
+    
     return htmlElement;
 } 
