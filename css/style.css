@@ -1,5 +1,8 @@
 /* !-------------------------------------------------------------------
 MOMENTANEAL CHANGES */
+.my-grid{
+    background-color: red;
+}
 /* *-------------------------------------------------------------------
 STILI GENERICI */
 
@@ -26,9 +29,6 @@ body{
 
 
 /* * CLASSI */
-.my-grid{
-    border: 1px solid;
-}
 
 
 
@@ -50,6 +50,15 @@ header .my-logo-container .my-logo{
 
 /* * MAIN */
 main{
-    height: 1000px;
+    height: 1100px;
     background-color: var(--main-bg-color);
+}
+
+main .my-grid{
+    height: 900px;
+    width: 900px;
+}
+
+main .my-grid .my-square{
+    border: 1px solid var(--primary-color);
 }
