@@ -18,7 +18,7 @@ CODICE PRINCIPALE */
 playBtn.addEventListener('click' , function(){
     if(mainElement.innerText === ''){
         // ? CREAZIONE E INSERIMENTO NEL DOM DEL CONTENITORE GRIGLIA
-        const gridContainer = getAnElement('div','my-grid d-flex flex-wrap');
+        const gridContainer = getAnElement('div','my-grid d-flex flex-wrap align-items-center');
         
         mainElement.append(gridContainer);
 
