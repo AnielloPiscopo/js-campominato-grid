@@ -29,25 +29,24 @@ body{
     min-width: 900px;
 }
 
-a{
-    color: var(--link-color);
-}
-
-a:visited{
-    color: var(--link-visited-color);
-}
-
-a:hover{
-    color: var(--link-hover-color);
-}
-
-a:active{
-    color: var(--link-active-color);
-}
-
 
 
 /* * CLASSI */
+.my-link{
+    color: var(--link-color);
+}
+
+.my-link:visited{
+    color: var(--link-visited-color);
+}
+
+.my-link:hover{
+    color: var(--link-hover-color);
+}
+
+.my-link:active{
+    color: var(--link-active-color);
+}
 
 
 
