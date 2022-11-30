@@ -8,6 +8,8 @@ STILI GENERICI */
     /* ? COLORI */
     --main-bg-color: #7fffd4;
     --primary-color: black;
+    --square-hover-color : #6cdbb6;
+    --square-active-color: #b2ffff;
 
 
     /* ? MISURE */
@@ -49,8 +51,9 @@ header .my-logo-container .my-logo{
 
 /* * MAIN */
 main{
-    height: 1100px;
     background-color: var(--main-bg-color);
+    padding: 5rem 0;
+    height: 100%;
 }
 
 main .my-grid{
@@ -64,4 +67,13 @@ main .my-grid .my-square{
     height: calc(100% / var(--number-of-squares));
     border: 2px solid var(--primary-color);
     font-size: 1.3em;
+    cursor: pointer;
+}
+
+main .my-grid .my-square:hover{
+    background-color: var(--square-hover-color);
+}
+
+main .my-grid .my-square.active{
+    background-color: var(--square-active-color);
 }
