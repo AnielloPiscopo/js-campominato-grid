@@ -36,7 +36,6 @@ playBtn.addEventListener('click' , function(){
             console.log(i);
         })
     }
-    
 })
 
 

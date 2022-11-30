@@ -1,23 +1,17 @@
 /* *-------------------------------------------------------------------
 GENERIC STYLES */
 
-/* * UNIVERSAL SELECTOR */
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* * ROOT */
+:root{
+    --main-bg-color: #7fffd4;
 }
 
 
 
-/* * ROOT */
-:root{}
-
-
-
 /* * HTML TAGS */
+body{
+    font-family: sans-serif;
+}
 
 
 
