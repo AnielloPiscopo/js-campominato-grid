@@ -15,8 +15,9 @@ STILI GENERICI */
 
 
     /* ? MISURE */
-    --general-font-size: 20px;
+    --general-font-size: 7px;
     --number-of-squares:10;
+    --grid-dimension : 400px;
 }
 
 
@@ -26,7 +27,7 @@ body{
     font-family: sans-serif;
     font-size: var(--general-font-size);
     color: var(--primary-color);
-    min-width: 900px;
+    min-width: 400px;
 }
 
 
@@ -46,6 +47,10 @@ body{
 
 .my-link:active{
     color: var(--link-active-color);
+}
+
+.my-btn{
+    font-size: 0.8rem;
 }
 
 
@@ -74,8 +79,8 @@ main{
 }
 
 main .my-grid{
-    height: 900px;
-    width: 900px;
+    height: var(--grid-dimension);
+    width: var(--grid-dimension);
 }
 
 main .my-grid .my-square{
@@ -84,7 +89,7 @@ main .my-grid .my-square{
     height: calc(100% / var(--number-of-squares));
     border: 2px solid var(--primary-color);
     font-size: 1.3em;
-    cursor: pointer;
+    cursor: crosshair;
 }
 
 main .my-grid .my-square:hover{
@@ -93,4 +98,82 @@ main .my-grid .my-square:hover{
 
 main .my-grid .my-square.active{
     background-color: var(--square-active-color);
+}
+
+
+
+
+
+/* * FOOTER */
+footer .my-icon{
+    cursor: pointer;
+}
+
+footer .my-icon:hover{
+    color:var(--link-active-color);
+}
+
+
+
+
+
+
+
+
+
+
+/* ?-------------------------------------------------------------------
+RESPONSIVENESS */
+
+/* * SM */
+@media screen and (min-width:576px){
+    /* * GENERAL STYLES */
+
+    /* ? ROOT */
+    :root{
+        --general-font-size: 12px;
+        --grid-dimension : 500px;
+    }
+}
+
+
+
+
+
+/* * MD */
+@media screen and (min-width:768px){
+    /* * GENERAL STYLES */
+
+    /* ? ROOT */
+    :root{
+        --general-font-size: 15px;
+        --grid-dimension : 700px;
+    }
+
+
+    /* ? CLASSES */
+    .my-btn{
+        font-size: 1.10rem;
+    }
+}
+
+
+
+
+
+/* * LG */
+@media screen and (min-width:992px){
+    /* * GENERAL STYLES */
+
+    /* ? ROOT */
+    :root{
+        --general-font-size: 20px;
+        --grid-dimension : 900px;
+    }
+
+
+    /* ? CLASSES */
+    .my-btn{
+        font-size: 1.25rem;
+    }
 }
